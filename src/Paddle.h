@@ -16,6 +16,6 @@ namespace Paddle
 	};
 
 	void move(Paddle& paddle, float delta);
-	void draw();
+	void draw(Paddle& paddle);
 }
 

@@ -14,8 +14,8 @@ namespace Paddle
 		}
 	}
 
-	void draw()
+	void draw(Paddle& paddle)
 	{
-
+		slRectangleFill(paddle.position.x, paddle.position.y, paddle.width, paddle.height, paddle.color);
 	}
 }
