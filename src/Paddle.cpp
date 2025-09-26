@@ -3,6 +3,18 @@
 
 namespace Paddle
 {
+	void update(Paddle& paddle, float delta)
+	{
+		paddle.direction = { 0,0 };
+
+		if (slGetKey('W') == true)
+		{
+			paddle.direction.y + 1;
+		}
+
+		move(paddle, delta);
+	}
+
 	void move(Paddle& paddle, float delta)
 	{
 		Math::Vector2 newPosition = GetSumOfVectors(paddle.position, { paddle.direction.x * paddle.speed * delta, paddle.direction.y * paddle.speed * delta });
@@ -16,6 +28,6 @@ namespace Paddle
 
 	void draw(Paddle& paddle)
 	{
-		slRectangleFill(paddle.position.x, paddle.position.y, paddle.width, paddle.height, paddle.color);
+		slRectangleFill(paddle.position.x, paddle.position.y, paddle.width, paddle.height);
 	}
 }

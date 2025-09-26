@@ -2,6 +2,7 @@
 
 #include "sl.h"
 #include "Screen.h"
+#include "Paddle.h"
 
 namespace Game
 {

@@ -10,7 +10,14 @@ namespace Game
 
 		while (!slShouldClose())
 		{
+			float deltaTime = slGetDeltaTime();
+
+			Paddle::Paddle paddle;
+
+			Paddle::update(paddle, deltaTime);
+
 			Screen::setBackColor(gameplayBackColor);
+			Paddle::draw(paddle);
 
 			slRender();
 		}
