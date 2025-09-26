@@ -19,11 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Math.cpp" />
+    <ClCompile Include="src\RunGame.cpp" />
+    <ClCompile Include="src\Screen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\math.h" />
-    <ClInclude Include="src\screen.h" />
+    <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Math.h" />
+    <ClInclude Include="src\RunGame.h" />
+    <ClInclude Include="src\Screen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
