@@ -5,11 +5,24 @@ namespace Paddle
 {
 	void update(Paddle& paddle, float delta)
 	{
+
 		paddle.direction = { 0,0 };
 
-		if (slGetKey('W') == true)
+		if (slGetKey('W'))
 		{
-			paddle.direction.y + 1;
+			paddle.direction.y +=1;
+		}
+		if (slGetKey('A'))
+		{
+			paddle.direction.x -=1;
+		}
+		if (slGetKey('S'))
+		{
+			paddle.direction.y -= 1;
+		}
+		if (slGetKey('D'))
+		{
+			paddle.direction.x += 1;
 		}
 
 		move(paddle, delta);

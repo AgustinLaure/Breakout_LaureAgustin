@@ -9,12 +9,13 @@ namespace Paddle
 
 	const float paddleInitialWidth = 100;
 	const float paddleInitialHeight = 30;
+	const float paddleInitialSpeed = 350;
 
 	struct Paddle
 	{
 		Math::Vector2 position = paddleInitialPos;
 		Math::Vector2 direction = {0, 1};
-		float speed = 0.0f;
+		float speed = paddleInitialSpeed;
 		ColorInfo::ColorsName color = ColorInfo::ColorsName::WHITE;
 		float width = paddleInitialWidth;
 		float height = paddleInitialHeight;
