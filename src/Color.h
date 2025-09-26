@@ -21,12 +21,12 @@ namespace ColorInfo
 
 	const int maxColors = 5;
 
-	const Rgba ColorsName[maxColors] =
+	const Rgba colorsName[maxColors] =
 	{
-
 		{1.0, 0.0, 0.0, 1.0},
 		{0.0, 1.0, 0.0, 1.0},
 		{0.0, 0.0, 1.0, 1.0},
-
+		{1.0, 1.0, 1.0, 1.0},
+		{0.0, 0.0, 0.0, 1.0}
 	};
 }

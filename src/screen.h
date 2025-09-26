@@ -6,14 +6,14 @@
 
 namespace Screen
 {
-	const int width = 1080;
-	const int height = 720;
-
 	const std::string windowName = "Breakout";
+
 	const bool isFullScreen = false;
+
+	extern int width;
+	extern int height;
 
 	ColorInfo::Rgba getColor(ColorInfo::ColorsName color);
 	void setBackColor(ColorInfo::ColorsName colorName);
-
 }
 
