@@ -19,16 +19,19 @@ namespace MainMenu
 	extern Math::Vector2 titlePos;
 	extern float titleFontSize;
 
-	const int maxCreditsLines = 1;
-	static Math::Vector2 creditsIntendedPos = {Screen::intendedWidth / 2, Screen::intendedHeight / 2};
-	static const int creditsIntendedFontSize = 25;
+	const int maxCreditsLines = 2;
+	static Math::Vector2 creditsIntendedPos = {Screen::intendedWidth / 2, Screen::intendedHeight / 2 + 30};
+	static const int creditsIntendedFontSize = 15;
 	static const string creditsText = "Game created by Agustin Laure";
+	static const string creditsText2 = "Kenney - Patern Pack Pixel";
 	static const string creditsFontName = "res/ARCADE_I.TTF";
 	const Color::ColorsName creditsBaseColor = Color::ColorsName::WHITE;
 	const float creditsInitialOpacity = 1.0f;
+	const float creditsIntendedDistance = 100.0f;
 
 	extern Math::Vector2 creditsPos;
 	extern float creditsFontSize;
+	extern float creditsDistance;
 
 	const int maxRulesLines = 3;
 	const float intendedRulesDistanceBetweenLines = 100.0f;

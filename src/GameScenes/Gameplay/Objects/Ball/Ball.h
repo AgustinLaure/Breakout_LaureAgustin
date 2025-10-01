@@ -11,6 +11,7 @@ namespace Ball
 	const static float titleInitialOpacity = 1.0f;
 	const static Math::Vector2 initialDir = { 0,1 };
 	const static float initialOpacity = 1.0f;
+	const std::string spriteName = "res/BallSprite/ballGrey.png";
 
 	extern Math::Vector2 initialPos;
 	extern float initialRadius;
@@ -34,6 +35,7 @@ namespace Ball
 		bool wasShot = initialWasShot;
 		int damage = initialDamage;
 		bool isColliding = false;
+		int spriteId = 0;
 	};
 
 	void update(Ball& ball, Paddle::Paddle paddle, Powerup::Powerup powerUps[], Forms::Rectangle playableArea, Block::Block blocks[], int& playerLives, float delta);

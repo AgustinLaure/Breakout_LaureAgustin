@@ -18,6 +18,7 @@ namespace MainMenu
 		Screen::getPosRelativeValue({creditsIntendedPos.x,creditsIntendedPos.y})
 	};
 	float creditsFontSize = Screen::getHeightRelativeValue(creditsIntendedFontSize);
+	float creditsDistance = Screen::getHeightRelativeValue(creditsIntendedDistance);
 
 	Math::Vector2 rulesPos =
 	{

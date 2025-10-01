@@ -56,7 +56,7 @@ namespace Ball
 	void draw(Ball ball)
 	{
 		Screen::setForeColor(ball.color, ball.opacity);
-		slCircleFill(ball.body.position.x, ball.body.position.y, ball.body.radius, ball.body.vertices);
+		slSprite(ball.spriteId,ball.body.position.x, ball.body.position.y, ball.body.radius * 2, ball.body.radius*2);
 		Screen::setForeDeaultColor();
 	}
 

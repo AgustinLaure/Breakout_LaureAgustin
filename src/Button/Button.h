@@ -14,4 +14,3 @@ namespace Button
 		bool isPressed = false;
 	};
 }
-

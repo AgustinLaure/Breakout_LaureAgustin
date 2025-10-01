@@ -21,7 +21,10 @@ namespace Game
 		MainMenu::MainMenuScenes currentMainMenuScene = MainMenu::MainMenuScenes::Menu;
 
 		Paddle::Paddle paddle;
+
 		Ball::Ball ball;
+		ball.spriteId = slLoadTexture(Ball::spriteName.c_str());
+
 		Block::Block blocks[Block::blockAmount];
 		Block::setupBlocks(blocks);
 		Screen::setBackColor(gameBackColor);
@@ -42,6 +45,7 @@ namespace Game
 
 		Text::Text credits[MainMenu::maxCreditsLines];
 		Text::initText(credits[0], MainMenu::creditsPos, MainMenu::creditsFontName, MainMenu::creditsFontSize, MainMenu::creditsText, MainMenu::creditsBaseColor, MainMenu::creditsInitialOpacity);
+		Text::initText(credits[1], {MainMenu::creditsPos.x, MainMenu::creditsPos.y - MainMenu::creditsDistance}, MainMenu::creditsFontName, MainMenu::creditsFontSize, MainMenu::creditsText2, MainMenu::creditsBaseColor, MainMenu::creditsInitialOpacity);
 
 		Text::Text rules[MainMenu::maxRulesLines];
 		Text::initText(rules[0], MainMenu::rulesPos, MainMenu::rulesFontName, MainMenu::rulesFontSize, MainMenu::rulesText1, MainMenu::rulesBaseColor, MainMenu::rulesInitialOpacity);
